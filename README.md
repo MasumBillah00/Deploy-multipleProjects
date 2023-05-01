@@ -6,14 +6,14 @@
 3.node --version && npm --version<br/>
 ### Step 2 - Creating a sample nodejs file
 1.Create a sample app {sudo vi app.js}<br/>
-2.const express = require('express')
-const app = express()
-const port = 3000
+2.const express = require('express')<br/>
+const app = express()<br/>
+const port = 3000<br/>
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
-})
+})<br/>
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
-})
+})<br/>
