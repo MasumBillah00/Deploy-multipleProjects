@@ -37,6 +37,7 @@ app.listen(port, () => {
     }
 }<br/>
 4.sudo ln -s /etc/nginx/sites-available/nodeApp /etc/nginx/sites-enabled--{Activate command}
+### Step 4 -Remove Nginx Default App
 
 
 
