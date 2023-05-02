@@ -37,12 +37,53 @@ app.listen(port, () => {
     }
 }<br/>
 4.sudo ln -s /etc/nginx/sites-available/nodeApp /etc/nginx/sites-enabled--{Activate command}
-### Step 4 -Remove Nginx Default App
+### Step 4 - Remove Nginx Default App
 # React.js Development
-### Step 1 -
-1.sudo apt update
-sudo apt install nodejs
-sudo apt install npm
+### Step 1 - Install Node.js and npm 
+1.sudo apt update<br/>
+sudo apt install nodejs<br/>
+sudo apt install npm<br/>
+### step 2 - Create a new directory for project
+mkdir hello-world<br/>
+cd hello-world<br/>
+### Step 4 - Initialize a new npm project & Install React.js and React-DOM 
+npm init -y<br/>
+npm install react react-dom<br/>
+### Step 5 - Create a new file called 'index.js' in the 'src' directory
+mkdir src<br/>
+cd src<br/>
+touch index.js<br/>
+### Step 6 -Open the index.js file in a text editor 
+import React from 'react';<br/>
+import ReactDOM from 'react-dom';<br/>
+
+const Hello = () => {
+  return <h1>Hello World!</h1>;
+};<br/>
+
+ReactDOM.render(<Hello />, document.getElementById('root'));<br/>
+### Step 7 - Create a new file called index.html in the root
+cd ..<br/>
+touch index.html
+### Step 8 - Open the index.html file in a text editor 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello World</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="./dist/bundle.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
 
 
 
