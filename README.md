@@ -66,7 +66,7 @@ ReactDOM.render(<Hello />, document.getElementById('root'));<br/>
 cd ..<br/>
 touch index.html
 ### Step 8 - Open the index.html file in a text editor 
-"<!DOCTYPE html><br/>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -76,7 +76,30 @@ touch index.html
     <div id="root"></div>
     <script src="./dist/bundle.js"></script>
   </body>
-</html>"
+</html>
+### Step 9 - Create a new directory called dist
+mkdir dist
+### Step 10 - Use a bundler like webpack to bundle the index.js
+npm install webpack webpack-cli --save-dev<br/>
+npx webpack src/index.js --output dist/bundle.js
+### Step 11 - Install Nginx & configuration file for your React.js
+1.sudo apt install nginx<br/>
+2.sudo nano /etc/nginx/sites-available/hello-world
+3.server {
+    listen 80;
+    server_name your-domain.com;
+
+    root /var/www/hello-world;
+
+    index index.html;
+
+    location / {
+        try_files $uri /index.html;
+    }
+}
+
+
+
 
 
 
