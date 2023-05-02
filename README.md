@@ -54,19 +54,19 @@ mkdir src<br/>
 cd src<br/>
 touch index.js<br/>
 ### Step 6 -Open the index.js file in a text editor 
-import React from 'react';<br/>
+"import React from 'react';<br/>
 import ReactDOM from 'react-dom';<br/>
 
 const Hello = () => {
   return <h5>Hello World!</h5>;
-};<br/>
+};"<br/>
 
 ReactDOM.render(<Hello />, document.getElementById('root'));<br/>
 ### Step 7 - Create a new file called index.html in the root
 cd ..<br/>
 touch index.html
 ### Step 8 - Open the index.html file in a text editor 
-<!DOCTYPE html>
+"<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -76,7 +76,7 @@ touch index.html
     <div id="root"></div>
     <script src="./dist/bundle.js"></script>
   </body>
-</html>
+</html>"
 
 
 
