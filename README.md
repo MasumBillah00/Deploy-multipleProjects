@@ -58,7 +58,7 @@ import React from 'react';<br/>
 import ReactDOM from 'react-dom';<br/>
 
 const Hello = () => {
-  return <h1>Hello World!</h1>;
+  return <h5>Hello World!</h5>;
 };<br/>
 
 ReactDOM.render(<Hello />, document.getElementById('root'));<br/>
