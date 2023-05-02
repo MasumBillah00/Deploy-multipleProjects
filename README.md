@@ -1,5 +1,5 @@
-# Deploy-multipleProjects
-## node.js deployment
+### -----Deploy-multipleProjects-----
+# node.js deployment
 ### Step 1 - Install Nodejs
 1.curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -<br/>
 2.sudo apt-get install -y nodejs<br/>
@@ -38,7 +38,7 @@ app.listen(port, () => {
 }<br/>
 4.sudo ln -s /etc/nginx/sites-available/nodeApp /etc/nginx/sites-enabled--{Activate command}
 ### Step 4 -Remove Nginx Default App
-## React.js Development
+# React.js Development
 
 
 
