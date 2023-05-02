@@ -66,7 +66,7 @@ ReactDOM.render(<Hello />, document.getElementById('root'));<br/>
 cd ..<br/>
 touch index.html
 ### Step 8 - Open the index.html file in a text editor 
-"<!DOCTYPE html>
+"<!DOCTYPE html><br/>
 <html>
   <head>
     <meta charset="utf-8" />
