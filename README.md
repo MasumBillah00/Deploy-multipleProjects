@@ -38,6 +38,7 @@ app.listen(port, () => {
 }<br/>
 4.sudo ln -s /etc/nginx/sites-available/nodeApp /etc/nginx/sites-enabled--{Activate command}
 ### Step 4 - Remove Nginx Default App
+## -----*******-----
 # React.js Development
 ### Step 1 - Install Node.js and npm 
 1.sudo apt update<br/>
