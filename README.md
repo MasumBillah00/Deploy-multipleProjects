@@ -84,7 +84,7 @@ npm install webpack webpack-cli --save-dev<br/>
 npx webpack src/index.js --output dist/bundle.js
 ### Step 11 - Install Nginx & configuration file for your React.js
 1.sudo apt install nginx<br/>
-2.sudo nano /etc/nginx/sites-available/hello-world
+2.sudo nano /etc/nginx/sites-available/hello-world<br/>
 3.server {
     listen 80;
     server_name your-domain.com;
@@ -97,6 +97,11 @@ npx webpack src/index.js --output dist/bundle.js
         try_files $uri /index.html;
     }
 }
+### Step 12 - Create a symbolic link to the Nginx configuration & restart 
+sudo ln -s /etc/nginx/sites-available/hello-world /etc/nginx/sites-enabled/<br/>
+sudo systemctl restart nginx
+
+
 
 
 
